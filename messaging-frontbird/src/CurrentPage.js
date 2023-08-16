@@ -36,7 +36,7 @@ function CurrentPage({ onNextPage, setStoreID }) {
         const data = { storeName: storeName.current.value, storeEmail: storeEmail.current.value, storePassword: storePassword.current.value};
         if(storePassword===''||storeName.current.value===''|storeEmail.current.value==='') {return null}
         console.log(data)
-        axios.post('https://rlfjlr1hqg.execute-api.us-east-2.amazonaws.com/test/api/addStore', data)
+        axios.post('placeholder', data)
           .then(response => {
             // console.log(typeof response.json);
             //OutgoingOrders(response);
@@ -79,7 +79,7 @@ function CurrentPage({ onNextPage, setStoreID }) {
         
         if(storePasswordIn===''||storeEmailIn==='') {return null}
         console.log(data)
-        axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/logIn', data)
+        axios.post('placeholder', data)
           .then(response => {
             // console.log(typeof response.json);
             //OutgoingOrders(response);

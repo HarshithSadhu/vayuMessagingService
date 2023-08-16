@@ -11,10 +11,10 @@ import uuid
 print ("The random id using uuid1() is : ",end="")
 print (uuid.uuid1())
 
-harshith = "2817054499"
+harshith = "placeholder"
 #Account Credentials
-account_sid = "AC1f155d1478d9e42d72db395fbcf5d315"
-auth_token = "fddf2e5a12ff444e6f83d1cdf2515dfc"
+account_sid = "placeholder"
+auth_token = "placeholder"
 
 client = Client(account_sid, auth_token)
 
@@ -32,8 +32,8 @@ app = Flask(__name__)
 CORS(app)
 
 connection = mysql.connector.connect(
-     user='8ghaizzcu0pybhj4ag4x',
-     password='pscale_pw_EZflVljHvvDVrMkcLVYCKxeVh5EejMD3zZ2UC5k8SJx',
+     user='placeholder',
+     password='placeholder',
      host='aws.connect.psdb.cloud',
      database='expenses',
  )

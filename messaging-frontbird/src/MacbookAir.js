@@ -21,7 +21,7 @@ export const MacbookAir = ({storeID}) => {
 
     function orderComplete(obj){
 
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/completedOrder', {'orderID':obj.orderID, 'name':obj.name, 'phone':obj.phone, 'storeID':storeID})
+      axios.post('placeholder', {'orderID':obj.orderID, 'name':obj.name, 'phone':obj.phone, 'storeID':storeID})
         .then(response => {
           console.log(response.data)
   
@@ -51,7 +51,7 @@ export const MacbookAir = ({storeID}) => {
         completedOrders: "test",
         storeID: storeID
       };
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/addOrder', data)
+      axios.post('placeholder', data)
         .then(response => {
           console.log(response.data);
           var jsonObject = JSON.parse(response.data);
@@ -81,7 +81,7 @@ export const MacbookAir = ({storeID}) => {
       console.log('Store ID:', storeID);
       const data = { phoneNum: phoneNum.current.value, customerName: customerName.current.value, completedOrders: outgoingOrders.completedOrders, storeID:storeID};
       if(phoneNum===''||customerName.current.value==='') {return null}
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/addOrder', data)
+      axios.post('placeholder', data)
         .then(response => {
           // console.log(typeof response.json);
           //OutgoingOrders(response);
@@ -107,7 +107,7 @@ export const MacbookAir = ({storeID}) => {
     }
 
     function deleteData(){
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/deleteAllOrders', {phoneNum: phoneNum.current.value, customerName: customerName.current.value, completedOrders: outgoingOrders.completedOrders, storeID:storeID})
+      axios.post('placeholder', {phoneNum: phoneNum.current.value, customerName: customerName.current.value, completedOrders: outgoingOrders.completedOrders, storeID:storeID})
         .then(response => {
           console.log(response.data)
           var jsonObject = JSON.parse(response.data);
@@ -122,7 +122,7 @@ export const MacbookAir = ({storeID}) => {
   
   
     function deleteCompletedOrders(){
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/deleteCompletedOrders', {outgoingOrders: outgoingOrders.orders, storeID:storeID})
+      axios.post('placeholder', {outgoingOrders: outgoingOrders.orders, storeID:storeID})
         .then(response => {
           console.log(response.data)
           var jsonObject = JSON.parse(response.data);
@@ -136,7 +136,7 @@ export const MacbookAir = ({storeID}) => {
     }
     
     function getStoreName(){
-      axios.post('https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/storeName', {storeID: storeID})
+      axios.post('placeholder', {storeID: storeID})
         .then(response => {
           console.log(response.data)
           var jsonObject = JSON.parse(response.data);
@@ -155,7 +155,7 @@ export const MacbookAir = ({storeID}) => {
     // const arr = [];
   
     const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/';
-    const apiUrl = 'https://n34mccvwo6.execute-api.us-east-2.amazonaws.com/production/vayurequests/api/addOrder';
+    const apiUrl = 'placeholder';
     const url = corsAnywhereUrl + apiUrl;
 
     function logOut(){
