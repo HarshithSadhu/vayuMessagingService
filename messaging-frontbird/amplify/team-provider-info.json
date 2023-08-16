@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-varun-dev-02148-authRole",
+      "UnauthRoleArn": "arn:aws:iam::493060997107:role/amplify-varun-dev-02148-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::493060997107:role/amplify-varun-dev-02148-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-varun-dev-02148-deployment",
+      "UnauthRoleName": "amplify-varun-dev-02148-unauthRole",
+      "StackName": "amplify-varun-dev-02148",
+      "StackId": "arn:aws:cloudformation:us-east-2:493060997107:stack/amplify-varun-dev-02148/faf44710-334f-11ee-85c8-02a57bb75109",
+      "AmplifyAppId": "d3czr0k3uazfpz"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3czr0k3uazfpz",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "varun": {}
+      }
+    }
+  }
+}
